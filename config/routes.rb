@@ -9,5 +9,6 @@ Rails.application.routes.draw do
     post '/runs' => 'runs#create'
 
     get '/earned_books' => 'earned_books#index'
+    patch '/earned_books/:id' => 'earned_books#update'
   end
 end
