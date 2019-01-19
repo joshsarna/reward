@@ -7,5 +7,7 @@ Rails.application.routes.draw do
     post '/sessions' => 'sessions#create'
 
     post '/runs' => 'runs#create'
+
+    get '/earned_books' => 'earned_books#index'
   end
 end
